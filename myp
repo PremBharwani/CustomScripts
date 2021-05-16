@@ -1,0 +1,4 @@
+#! /bin/sh
+
+cd /home/merp/Desktop/.myp/p
+for FILE in *;do eog $FILE;done

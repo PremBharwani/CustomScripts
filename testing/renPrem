@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for FILE in *
+do
+VAR=''
+echo $FILE | sed 's/[^0-9]//g' > VAR
+NAME = 'L'
+done

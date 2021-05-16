@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ $1 = "-h" ]
+        then
+                echo "use this command to get a new cp file ready ."
+                echo "usage : cpMode <newFileName>"
+        else
+                cd ~/Desktop/cp
+                mkdir $1
+                cp template.cpp $1/
+                cd $1
+                mv template.cpp main.cpp
+                touch input.txt output.txt
+                subl main.cpp input.txt output.txt
+fi

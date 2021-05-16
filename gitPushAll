@@ -1,0 +1,9 @@
+#! /bin/sh
+if [ $1 == '-h' || $1 == '-help' || $1 == '--h' || $1 == '--help' ]
+then    
+    echo "This is command adds , commits , and pushes EVERY file ,\n usage :\n $ gitPushAll \"This is my commit message\" "
+else
+    git add -A
+    git commit -m "$1"
+    git push 
+fi
